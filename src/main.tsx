@@ -10,7 +10,7 @@ import ProjectPage from "@components/ProjectPage.tsx";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ConfigProvider>
-      <BrowserRouter basename="/my-portfolio">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/projects" element={<ProjectPage />} />
