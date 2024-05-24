@@ -17,7 +17,7 @@ function App() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const { ref: homeRef, inView: inViewHome } = useInView({ triggerOnce: true });
+  // const { ref: homeRef, inView: inViewHome } = useInView({ triggerOnce: true });
   const { ref: aboutRef, inView: inViewAbout } = useInView({ triggerOnce: true });
   const { ref: workRef, inView: inViewWork } = useInView({ triggerOnce: true });
   const { ref: contactRef, inView: inViewContact } = useInView({ triggerOnce: true });
@@ -215,10 +215,10 @@ function App() {
         id="home"
         className="h-auto md:h-screen flex justify-center items-center mb-10 md:mb-0"
         data-scroll-section
-        ref={homeRef}
-        initial={{ opacity: 0, y: 50 }}
-        animate={inViewHome ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.5 }}
+        // ref={homeRef}
+        // initial={{ opacity: 0, y: 50 }}
+        // animate={inViewHome ? { opacity: 1, y: 0 } : {}}
+        // transition={{ duration: 0.5 }}
       >
         <HomePage />
       </motion.div>

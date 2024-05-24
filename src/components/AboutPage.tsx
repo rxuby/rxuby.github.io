@@ -1,9 +1,10 @@
 // import React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import snowball from "@images/sn.jpg";
+// import snowball from "@images/sn.jpg";
 import vector from "../images/Vector.png";
 import heart2 from "../images/heart2.png";
+import khing from "../images/khing.jpg"
 
 function AboutPage() {
   const { ref: refAbout, inView: inViewAbout } = useInView({
@@ -90,7 +91,7 @@ function AboutPage() {
             <img
               width={"100%"}
               className="border-[4px] border-[#4c63af]"
-              src={snowball}
+              src={khing}
               alt=""
             />
           </motion.div>

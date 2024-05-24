@@ -3,7 +3,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import sticker3 from "../images/sticker3.png";
-// import stamp2 from "../images/stamp2.png"
+import sticker5 from "../images/sticker5.png";
 
 function ContactPage() {
   const copyToClipboard = (text: string) => {
@@ -36,7 +36,7 @@ function ContactPage() {
         src={heart7}
         alt=""
       /> */}
-    
+
       <img
         className=" absolute w-20 top-20 right-20 md:w-48 md:top-[6rem] md:right-12  md:rotate-6 lg:top-52 lg:right-24 lg:rotate-6 xl:top-[8rem] xl:right-[10rem] xl:rotate-6"
         src={sticker3}
@@ -145,19 +145,25 @@ function ContactPage() {
         </div>
       </div>
 
+      <img
+        className="absolute xl:w-44 lg:w-36 md:w-28 md:left-[0rem] md:bottom-[9rem]  md:-rotate-12 lg:left-[10rem] lg:bottom-[26rem]  lg:-rotate-12 xl:left-[14rem] xl:bottom-[30rem] z-20 xl:-rotate-12 "
+        src={sticker5}
+        alt=""
+      />
+
       {/* <img className="absolute w-24 md:right-36 md:top-[27rem] md:-rotate-12 lg:right-56 lg:top-[27rem] lg:-rotate-12 xl:right-56 xl:top-[18rem]  z-20 xl:-rotate-12" src={flower1} alt="" /> */}
       {/* <img
-        className="absolute xl:w-40 lg:w-36 md:w-28 md:left-[0rem] md:bottom-[9rem]  md:-rotate-12 lg:left-[10rem] lg:bottom-[26rem]  lg:-rotate-12 xl:left-[350px] xl:bottom-7 z-20 xl:-rotate-12 "
+        className="absolute xl:w-40 lg:w-36 md:w-28 md:left-[0rem] md:bottom-[9rem]  md:-rotate-12 lg:left-[10rem] lg:bottom-[26rem]  lg:-rotate-12 xl:left-[14rem] xl:bottom-[25rem] z-20 xl:-rotate-12 "
         src={stamp2}
         alt=""
-      /> */}
+      />
 
       <h1
         style={{ fontFamily: "Lilita One" }}
         className="text-ty absolute flex justify-center items-center text-5xl p-3 px-14  md:-rotate-3  md:right-5 md:bottom-[10rem] lg:-rotate-3  lg:right-20 lg:bottom-[28rem] xl:-rotate-3 xl:text-7xl  xl:right-20 xl:bottom-16   text-[#FF9494]"
       >
         Thanks for visit my portfolio 
-      </h1>
+      </h1> */}
     </div>
   );
 }
