@@ -9,6 +9,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import { AnimatePresence, motion } from "framer-motion";
 import BreakPage from "@components/BreakPage";
 import { FaBars, FaTimes } from "react-icons/fa";
+import BreakPage2 from "@components/BreakPage2";
 // import "locomotive-scroll/dist/locomotive-scroll.css";
 
 function App() {
@@ -264,6 +265,10 @@ function App() {
       >
         <WorkPage />
       </motion.div>
+
+      <div>
+        <BreakPage2/>
+      </div>
 
       <motion.div
         id="contact"
