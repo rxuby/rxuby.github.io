@@ -5,7 +5,7 @@ import "./index.css";
 import { ConfigProvider } from "antd";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import router from "@functions/router.tsx";
-import ProjectPage from "@components/ProjectPage.tsx";
+// import ProjectPage from "@components/ProjectPage.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/projects" element={<ProjectPage />} />
+          {/* <Route path="/projects" element={<ProjectPage />} /> */}
         </Routes>
       </BrowserRouter>
     </ConfigProvider>

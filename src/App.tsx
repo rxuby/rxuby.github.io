@@ -18,9 +18,13 @@ function App() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   // const { ref: homeRef, inView: inViewHome } = useInView({ triggerOnce: true });
-  const { ref: aboutRef, inView: inViewAbout } = useInView({ triggerOnce: true });
+  const { ref: aboutRef, inView: inViewAbout } = useInView({
+    triggerOnce: true,
+  });
   const { ref: workRef, inView: inViewWork } = useInView({ triggerOnce: true });
-  const { ref: contactRef, inView: inViewContact } = useInView({ triggerOnce: true });
+  const { ref: contactRef, inView: inViewContact } = useInView({
+    triggerOnce: true,
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,9 +66,11 @@ function App() {
   };
 
   return (
-    <div ref={scrollRef} data-scroll-container>
+    <div ref={scrollRef} data-scroll-container data-scroll-speed="1">
       <motion.nav
-        className={`flex justify-center fixed h-24 top-0 right-0 z-50 w-full transition-transform duration-500 ${showNav ? "translate-y-0" : "-translate-y-full"}`}
+        className={`flex justify-center fixed h-24 top-0 right-0 z-50 w-full transition-transform duration-500 ${
+          showNav ? "translate-y-0" : "-translate-y-full"
+        }`}
         initial={{ y: "-100%" }}
         animate={{ y: showNav ? 0 : "-100%" }}
         transition={{ duration: 0.2 }}
@@ -82,6 +88,7 @@ function App() {
                   scrollToSection("home");
                 }}
               >
+                {" "}
                 Portfolio
               </a>
             </li>
@@ -95,6 +102,7 @@ function App() {
                   scrollToSection("home");
                 }}
               >
+                {" "}
                 Home
               </a>
             </li>
@@ -106,6 +114,7 @@ function App() {
                   scrollToSection("about");
                 }}
               >
+                {" "}
                 About
               </a>
             </li>
@@ -117,6 +126,7 @@ function App() {
                   scrollToSection("work");
                 }}
               >
+                {" "}
                 Work
               </a>
             </li>
@@ -128,6 +138,7 @@ function App() {
                   scrollToSection("contact");
                 }}
               >
+                {" "}
                 Contact
               </a>
             </li>
@@ -164,6 +175,7 @@ function App() {
                     setShowMobileMenu(false);
                   }}
                 >
+                  {" "}
                   Home
                 </a>
               </li>
@@ -190,6 +202,7 @@ function App() {
                     setShowMobileMenu(false);
                   }}
                 >
+                  {" "}
                   Work
                 </a>
               </li>
@@ -203,6 +216,7 @@ function App() {
                     setShowMobileMenu(false);
                   }}
                 >
+                  {" "}
                   Contact
                 </a>
               </li>

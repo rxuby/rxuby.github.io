@@ -65,13 +65,6 @@ export default function BreakPage() {
           Design this portfolio website by Jutapon Chaiyakhun
         </ParallaxText>
       </div>
-
-      {/* 
-      <div className="border-none bg-[] md:-rotate-2">
-        <ParallaxText baseVelocity={2}>
-        Computer Science KKU58 Computer Science KKU58
-        </ParallaxText>
-      </div> */}
     </section>
   );
 }
