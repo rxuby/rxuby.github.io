@@ -166,10 +166,10 @@ function App() {
             exit={{ x: "100%" }}
             transition={{ duration: 0.3 }}
           >
-            <ul className="flex flex-col text-center items-center gap-4 mt-2 text-4xl md:hidden transition-transform z-20 duration-500">
-              <li className="py-2 z-20">
+            <ul className="flex flex-col text-center items-center gap-4 mt-2 text-4xl md:hidden transition-transform z-50 duration-500">
+              <li className="py-2 z-50">
                 <a
-                  className="py-2 px-8 bg-white border-[3px] border-[#5067b0] text-[#5067b0]"
+                  className="py-2 px-8 z-50 bg-white border-[3px] border-[#5067b0] text-[#5067b0]"
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();
@@ -181,9 +181,9 @@ function App() {
                   Home
                 </a>
               </li>
-              <li className="py-2 z-20">
+              <li className="py-2 z-50">
                 <a
-                  className="py-2 px-7 bg-white border-[3px] border-[#5067b0] text-[#5067b0]"
+                  className="py-2 z-50 px-7 bg-white border-[3px] border-[#5067b0] text-[#5067b0]"
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();
@@ -195,9 +195,9 @@ function App() {
                   About
                 </a>
               </li>
-              <li className="py-2 z-20">
+              <li className="py-2 z-50">
                 <a
-                  className="py-2 px-8 bg-white border-[3px] border-[#5067b0] text-[#5067b0]"
+                  className="py-2 z-50 px-8 bg-white border-[3px] border-[#5067b0] text-[#5067b0]"
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();
@@ -209,9 +209,9 @@ function App() {
                   Work
                 </a>
               </li>
-              <li className="py-2 z-20">
+              <li className="py-2 z-50">
                 <a
-                  className="py-2 px-4 bg-white border-[3px] border-[#5067b0] text-[#5067b0]"
+                  className="py-2 z-50 px-4 bg-white border-[3px] border-[#5067b0] text-[#5067b0]"
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();

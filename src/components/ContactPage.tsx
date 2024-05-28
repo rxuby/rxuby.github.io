@@ -32,7 +32,7 @@ function ContactPage() {
       <div className="contact-box flex flex-col justify-center items-center  md:justify-center md:items-center py-4  gap-6">
         <h1
           style={{ fontFamily: "Lilita One" }}
-          className="contact justify-center z-50 text-5xl md:text-7xl  text-[#FF9494] "
+          className="contact justify-center  text-5xl md:text-7xl  text-[#FF9494] "
         >
           MY CONTACT
         </h1>
