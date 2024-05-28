@@ -105,8 +105,7 @@ function App() {
                   scrollToSection("home");
                 }}
               >
-                {" "}
-                Home{" "}
+                Home
               </a>
             </li>
             <li className="hov">
@@ -117,8 +116,7 @@ function App() {
                   scrollToSection("about");
                 }}
               >
-                {" "}
-                About{" "}
+                About
               </a>
             </li>
             <li className="hov">
@@ -129,8 +127,7 @@ function App() {
                   scrollToSection("work");
                 }}
               >
-                {" "}
-                Work{" "}
+                Work
               </a>
             </li>
             <li className="hov">
@@ -141,8 +138,7 @@ function App() {
                   scrollToSection("contact");
                 }}
               >
-                {" "}
-                Contact{" "}
+                Contact
               </a>
             </li>
           </div>
@@ -178,7 +174,6 @@ function App() {
                     setShowMobileMenu(false);
                   }}
                 >
-                  {" "}
                   Home
                 </a>
               </li>
@@ -192,7 +187,6 @@ function App() {
                     setShowMobileMenu(false);
                   }}
                 >
-                  {" "}
                   About
                 </a>
               </li>
@@ -206,7 +200,6 @@ function App() {
                     setShowMobileMenu(false);
                   }}
                 >
-                  {" "}
                   Work
                 </a>
               </li>
@@ -220,7 +213,6 @@ function App() {
                     setShowMobileMenu(false);
                   }}
                 >
-                  {" "}
                   Contact
                 </a>
               </li>
@@ -233,10 +225,6 @@ function App() {
         id="home"
         className="h-auto md:h-screen flex justify-center items-center mb-10 md:mb-0"
         data-scroll-section
-        // ref={homeRef}
-        // initial={{ opacity: 0, y: 50 }}
-        // animate={inViewHome ? { opacity: 1, y: 0 } : {}}
-        // transition={{ duration: 0.5 }}
       >
         <HomePage />
       </motion.div>

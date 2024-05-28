@@ -3,8 +3,6 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import small6 from "../images/small6.png";
-// import stamp1 from "@images/stamp1.png";
-
 
 function ContactPage() {
   const copyToClipboard = (text: string) => {
@@ -27,8 +25,6 @@ function ContactPage() {
 
   return (
     <div>
-      {/* <img className="hidden absolute top-[20rem] left-[0rem] xl:flex  rotate-12" width={"50%"} src={stamp1} alt="" /> */}
-      
       <div className="contact-box flex flex-col justify-center items-center  md:justify-center md:items-center py-4  gap-6 relative">
         <h1
           style={{ fontFamily: "Lilita One" }}
@@ -74,7 +70,6 @@ function ContactPage() {
             <a
               href="mailto:jutapon.c@kkumail.com"
               className="flex justify-center items-center cursor-pointer border-2 rounded-xl p-2 border-[#4c63af]"
-              // onClick={() => copyToClipboard("jutapon.c@kkumail.com")}
             >
               <MdEmail className="contact-icon-mail text-2xl text-[#4c63af] " />
             </a>
