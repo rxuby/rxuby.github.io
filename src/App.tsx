@@ -10,7 +10,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import BreakPage from "@components/BreakPage";
 import { FaBars, FaTimes } from "react-icons/fa";
 // import BreakPage2 from "@components/BreakPage2";
-
 // import "locomotive-scroll/dist/locomotive-scroll.css";
 
 function App() {
@@ -167,7 +166,7 @@ function App() {
             exit={{ x: "100%" }}
             transition={{ duration: 0.3 }}
           >
-            <ul className="flex flex-col text-center items-center gap-4 mt-2 text-4xl md:hidden transition-transform duration-500">
+            <ul className="flex flex-col text-center items-center gap-4 mt-2 text-4xl md:hidden transition-transform z-20 duration-500">
               <li className="py-2">
                 <a
                   className="py-2 px-8 bg-white border-[3px] border-[#5067b0] text-[#5067b0]"
@@ -281,7 +280,6 @@ function App() {
         <BreakPage2 />
       </motion.div> */}
 
-
       <motion.div
         id="contact"
         className=" h-screen md:h-screen lg:h-screen xl:h-screen flex items-center justify-center mt-20 border-t-[3px] border-[#4c63af] bg-white "
@@ -291,10 +289,6 @@ function App() {
         animate={inViewContact ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5 }}
       >
-        
-        
-    
-
         <ContactPage />
       </motion.div>
     </div>
