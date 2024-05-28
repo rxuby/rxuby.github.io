@@ -9,6 +9,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import { AnimatePresence, motion } from "framer-motion";
 import BreakPage from "@components/BreakPage";
 import { FaBars, FaTimes } from "react-icons/fa";
+import BreakPage2 from "@components/BreakPage2";
 // import BreakPage2 from "@components/BreakPage2";
 // import "locomotive-scroll/dist/locomotive-scroll.css";
 
@@ -268,22 +269,13 @@ function App() {
         <WorkPage />
       </motion.div>
 
-      {/* <motion.div
-        id="bake"
-        className="h-auto"
-        data-scroll-section
-        ref={bakeRef}
-        initial={{ opacity: 0, y: 50 }}
-        animate={inViewBake ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.5 }}
-      >
+      <motion.div className="h-96 flex justify-center items-center">
         <BreakPage2 />
-      </motion.div> */}
+      </motion.div>
 
       <motion.div
         id="contact"
-        className=" h-screen md:h-screen lg:h-screen xl:h-screen flex items-center justify-center mt-20 border-t-[3px] border-[#4c63af] bg-white "
-        data-scroll-section
+        className=" h-screen md:h-screen lg:h-screen xl:h-screen flex items-center justify-center border-t-[3px] border-[#4c63af] bg-white"
         ref={contactRef}
         initial={{ opacity: 0, y: 50 }}
         animate={inViewContact ? { opacity: 1, y: 0 } : {}}

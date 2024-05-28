@@ -29,13 +29,18 @@ function ContactPage() {
     <div>
       {/* <img className="hidden absolute top-[20rem] left-[0rem] xl:flex  rotate-12" width={"50%"} src={stamp1} alt="" /> */}
       
-      <div className="contact-box flex flex-col justify-center items-center  md:justify-center md:items-center py-4  gap-6">
+      <div className="contact-box flex flex-col justify-center items-center  md:justify-center md:items-center py-4  gap-6 relative">
         <h1
           style={{ fontFamily: "Lilita One" }}
           className="contact justify-center  text-5xl md:text-7xl  text-[#FF9494] "
         >
           MY CONTACT
         </h1>
+        <img
+        className="absolute hidden  md:flex lg:flex xl:flex xl:w-32 lg:w-24 md:w-28 md:left-[26rem] md:top-[0rem] md:rotate-12  lg:left-[40rem] lg:top-[0rem] lg:rotate-12  xl:left-[40rem] xl:top-[0rem]  xl:rotate-12 "
+        src={small6}
+        alt=""
+      />
 
         <div
           className="flex flex-col items-start z-50 md:flex-col md:justify-center md:items-start lg:flex-row  xl:flex-row  gap-10 mt-20 "
@@ -129,12 +134,8 @@ function ContactPage() {
           </a>
         </div>
       </div>
-
-      <img
-        className="absolute hidden md:flex lg:flex xl:flex xl:w-32 lg:w-24 md:w-28 md:left-[25rem] md:bottom-[15rem]  md:rotate-12 lg:left-[57rem] lg:bottom-[34rem]  lg:rotate-12 xl:left-[75rem] xl:bottom-[11rem] z-20 xl:rotate-12 "
-        src={small6}
-        alt=""
-      />
+   
+   
     </div>
   );
 }

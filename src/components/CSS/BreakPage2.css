@@ -1,0 +1,14 @@
+.icon-stroke {
+    stroke: black;
+    stroke-width: 1px;
+  }
+
+  .banner-tag{
+    -webkit-text-stroke: 3px #4c63af;
+  }
+
+  .box{
+    box-shadow: 2px 2px 0px #4c63af;
+  }
+
+  
