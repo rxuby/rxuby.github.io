@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import vector from "../images/Vector.png";
 import heart2 from "../images/heart2.png";
-import khing from "../images/khing.jpg";
+import khing4 from "../images/khing4.jpg";
 
 function AboutPage() {
   return (
-    <motion.div className="bg-white border-[3px] border-[#4c63af] rounded-3xl mx-5">
+    <motion.div className="bg-white border-[3px] border-[#4c63af] rounded-3xl px-5 mx-5">
       <div className="pt-3 ">
         <motion.img
-          className="absolute w-44 top-[32rem] right-0 rotate-90 md:w-80 md:right-0 md:top-[25rem] md:rotate-[100deg] lg:right-14 lg:top-[35rem] lg:rotate-90 xl:rotate-12 xl:right-[500px] xl:top-0"
+          className="absolute  w-44 top-[35rem] right-0 rotate-90 md:w-80 md:right-0 md:top-[25rem] md:rotate-[100deg] lg:right-14 lg:top-[35rem] lg:rotate-90 xl:rotate-12  xl:right-[35rem] xl:top-0"
           src={vector}
           alt=""
         />
@@ -16,7 +16,7 @@ function AboutPage() {
       <motion.div className="flex flex-col-reverse xl:flex-row xl:justify-around items-center mt-7 xl:mt-2">
         <motion.div className="about-box w-[80%] xl:w-[50%]">
           <div className="flex justify-end lg:justify-center xl:justify-end">
-            <p className="px-5 xl:px-0 text-6xl xl:text-5xl font-bold text-[#4c63af]">
+            <p className="px-5 text-3xl md:text-6xl xl:px-0  xl:text-5xl font-bold text-[#4c63af]">
               Jutapon Chaiyakhun
             </p>
           </div>
@@ -47,8 +47,8 @@ function AboutPage() {
           <motion.div className="pic-box border-[4px] border-[#4c63af] p-6 xl:-rotate-6">
             <img
               width={"100%"}
-              className="border-[4px] border-[#4c63af]"
-              src={khing}
+              className="flex  justify-center items-center border-[4px] border-[#4c63af]"
+              src={khing4}
               alt=""
             />
           </motion.div>

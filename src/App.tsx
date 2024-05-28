@@ -9,7 +9,8 @@ import LocomotiveScroll from "locomotive-scroll";
 import { AnimatePresence, motion } from "framer-motion";
 import BreakPage from "@components/BreakPage";
 import { FaBars, FaTimes } from "react-icons/fa";
-import BreakPage2 from "@components/BreakPage2";
+// import BreakPage2 from "@components/BreakPage2";
+
 // import "locomotive-scroll/dist/locomotive-scroll.css";
 
 function App() {
@@ -18,7 +19,6 @@ function App() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  // const { ref: homeRef, inView: inViewHome } = useInView({ triggerOnce: true });
   const { ref: aboutRef, inView: inViewAbout } = useInView({
     triggerOnce: true,
   });
@@ -36,6 +36,10 @@ function App() {
         setShowNav(true);
       }
       setLastScrollY(currentScrollY);
+
+      if (showMobileMenu) {
+        setShowMobileMenu(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -43,7 +47,7 @@ function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY]);
+  }, [lastScrollY, showMobileMenu]);
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -65,7 +69,6 @@ function App() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
-
   return (
     <div ref={scrollRef} data-scroll-container data-scroll-speed="1">
       <motion.nav
@@ -89,7 +92,6 @@ function App() {
                   scrollToSection("home");
                 }}
               >
-                {" "}
                 Portfolio
               </a>
             </li>
@@ -104,7 +106,7 @@ function App() {
                 }}
               >
                 {" "}
-                Home
+                Home{" "}
               </a>
             </li>
             <li className="hov">
@@ -116,7 +118,7 @@ function App() {
                 }}
               >
                 {" "}
-                About
+                About{" "}
               </a>
             </li>
             <li className="hov">
@@ -128,7 +130,7 @@ function App() {
                 }}
               >
                 {" "}
-                Work
+                Work{" "}
               </a>
             </li>
             <li className="hov">
@@ -140,7 +142,7 @@ function App() {
                 }}
               >
                 {" "}
-                Contact
+                Contact{" "}
               </a>
             </li>
           </div>
@@ -190,6 +192,7 @@ function App() {
                     setShowMobileMenu(false);
                   }}
                 >
+                  {" "}
                   About
                 </a>
               </li>
@@ -266,19 +269,32 @@ function App() {
         <WorkPage />
       </motion.div>
 
-      <div>
-        <BreakPage2/>
-      </div>
+      {/* <motion.div
+        id="bake"
+        className="h-auto"
+        data-scroll-section
+        ref={bakeRef}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inViewBake ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.5 }}
+      >
+        <BreakPage2 />
+      </motion.div> */}
+
 
       <motion.div
         id="contact"
-        className="h-auto md:h-screen lg:h-screen xl:h-screen flex items-center justify-center bg-white mt-10 border-t-[3px] border-[#4c63af]"
+        className=" h-screen md:h-screen lg:h-screen xl:h-screen flex items-center justify-center mt-20 border-t-[3px] border-[#4c63af] bg-white "
         data-scroll-section
         ref={contactRef}
         initial={{ opacity: 0, y: 50 }}
         animate={inViewContact ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5 }}
       >
+        
+        
+    
+
         <ContactPage />
       </motion.div>
     </div>

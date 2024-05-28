@@ -6,15 +6,15 @@ import small4 from "../images/small4.png";
 
 function HomePage() {
   return (
-    <motion.div>
+    <motion.div className="duration-300">
       <motion.img
         animate={{ rotate: 12 }}
-        className="absolute w-64 md:w-96 lg:w-96 xl:w-96  sm:left-24 sm:top-64 sm:rotate-12 md:left-24 md:top-64 md:rotate-12 lg:left-36 lg:top-96 lg:rotate-12  xl:left-64 xl:top-32 xl:rotate-12"
+        className="absolute w-64 md:w-96 lg:w-96 xl:w-96  sm:left-24 sm:top-64 sm:rotate-12 md:left-24 md:top-64 md:rotate-12 lg:left-36 lg:top-96 lg:rotate-12  xl:left-64 xl:top-32 xl:rotate-12 "
         src={star}
         alt=""
       />
       <motion.img
-        className="absolute hidden w-12 bottom-10 right-1 z-20 md:flex md:w-20  md:bottom-[14rem] md:right-20 md:rotate-6 lg:bottom-[30rem] lg:right-20 lg:rotate-6 xl:bottom-48 xl:right-64 xl:rotate-6"
+        className="absolute hidden w-12 bottom-10 right-1 z-20 md:flex  md:w-20  md:bottom-[14rem] md:right-20 md:rotate-6  lg:bottom-[30rem] lg:right-20 lg:rotate-6 xl:bottom-48 xl:right-64 xl:rotate-6"
         initial={{ scale: 0 }}
         animate={{ scale: 1, rotate: 6 }}
         transition={{ duration: 0.2, delay: 0.8 }}
@@ -70,7 +70,7 @@ function HomePage() {
       >
         <h1
           style={{ fontFamily: "Lilita One" }}
-          className="flex justify-center items-center text-[1.8rem] p-1 px-2  md:text-5xl md:p-3 md:px-14 border-[3px] md:rotate-2 border-[#4c63af] bg-[#92a1d4] text-[#fbefe1]"
+          className="flex justify-center items-center text-[2rem] p-2 px-2 md:text-5xl md:p-3 md:px-14 border-[3px] md:mt-2 md:rotate-2 border-[#4c63af] bg-[#92a1d4] text-[#fbefe1]"
         >
           Design by Khing CS KKU 58
         </h1>

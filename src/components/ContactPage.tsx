@@ -3,6 +3,8 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import small6 from "../images/small6.png";
+// import stamp1 from "@images/stamp1.png";
+
 
 function ContactPage() {
   const copyToClipboard = (text: string) => {
@@ -25,7 +27,9 @@ function ContactPage() {
 
   return (
     <div>
-      <div className="contact-box flex flex-col justify-center items-center  md:justify-center md:items-center py-4  gap-6 bg-white">
+      {/* <img className="hidden absolute top-[20rem] left-[0rem] xl:flex  rotate-12" width={"50%"} src={stamp1} alt="" /> */}
+      
+      <div className="contact-box flex flex-col justify-center items-center  md:justify-center md:items-center py-4  gap-6">
         <h1
           style={{ fontFamily: "Lilita One" }}
           className="contact justify-center z-50 text-5xl md:text-7xl  text-[#FF9494] "
@@ -127,7 +131,7 @@ function ContactPage() {
       </div>
 
       <img
-        className="absolute xl:w-32 lg:w-36 md:w-28 md:left-[0rem] md:bottom-[9rem]  md:-rotate-12 lg:left-[10rem] lg:bottom-[26rem]  lg:-rotate-12 xl:left-[75rem] xl:bottom-[11rem] z-20 xl:rotate-12 "
+        className="absolute hidden md:flex lg:flex xl:flex xl:w-32 lg:w-24 md:w-28 md:left-[25rem] md:bottom-[15rem]  md:rotate-12 lg:left-[57rem] lg:bottom-[34rem]  lg:rotate-12 xl:left-[75rem] xl:bottom-[11rem] z-20 xl:rotate-12 "
         src={small6}
         alt=""
       />
