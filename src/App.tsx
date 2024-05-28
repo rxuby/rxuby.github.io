@@ -167,7 +167,7 @@ function App() {
             transition={{ duration: 0.3 }}
           >
             <ul className="flex flex-col text-center items-center gap-4 mt-2 text-4xl md:hidden transition-transform z-20 duration-500">
-              <li className="py-2">
+              <li className="py-2 z-20">
                 <a
                   className="py-2 px-8 bg-white border-[3px] border-[#5067b0] text-[#5067b0]"
                   href="#"
@@ -181,7 +181,7 @@ function App() {
                   Home
                 </a>
               </li>
-              <li className="py-2">
+              <li className="py-2 z-20">
                 <a
                   className="py-2 px-7 bg-white border-[3px] border-[#5067b0] text-[#5067b0]"
                   href="#"
@@ -195,7 +195,7 @@ function App() {
                   About
                 </a>
               </li>
-              <li className="py-2">
+              <li className="py-2 z-20">
                 <a
                   className="py-2 px-8 bg-white border-[3px] border-[#5067b0] text-[#5067b0]"
                   href="#"
@@ -209,7 +209,7 @@ function App() {
                   Work
                 </a>
               </li>
-              <li className="py-2">
+              <li className="py-2 z-20">
                 <a
                   className="py-2 px-4 bg-white border-[3px] border-[#5067b0] text-[#5067b0]"
                   href="#"
