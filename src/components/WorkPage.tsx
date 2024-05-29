@@ -128,7 +128,7 @@ function WorkPage() {
           keyboard={true}
           modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         >
-          <SwiperSlide className="flex justify-center items-center content-center my-5 ">
+          <SwiperSlide className="flex justify-center items-center content-center my-5">
             {" "}
             <a href="https://github.com/rxuby/React_Route.git">
               <motion.div
@@ -137,7 +137,7 @@ function WorkPage() {
                 transition={{ delay: 0.1 }}
                 className="work-box sm:w-[500px] md:w-[700px] lg:w-[700px] xl:w-[1000px] 2xl:w-[1100px] border-[3px] border-[#4c63af] rounded-3xl bg-white"
               >
-                <div className="my-4 mx-4 ">
+                <div className="my-4 mx-4">
                   <img
                     className="rounded-3xl border-[3px] border-[#4c63af] "
                     src={pokemon}

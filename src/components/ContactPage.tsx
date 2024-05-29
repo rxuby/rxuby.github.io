@@ -129,8 +129,6 @@ function ContactPage() {
           </a>
         </div>
       </div>
-   
-   
     </div>
   );
 }
