@@ -223,7 +223,7 @@ function App() {
 
       <motion.div
         id="home"
-        className="h-screen md:h-screen flex justify-center items-center mb-10 md:mb-0"
+        className="h-auto md:h-screen flex justify-center items-center mb-10 md:mb-0"
         data-scroll-section
       >
         <HomePage />
