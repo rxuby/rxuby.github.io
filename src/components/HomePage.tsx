@@ -11,7 +11,7 @@ function HomePage() {
         animate={{ rotate: 12 }}
         className="absolute w-64 md:w-96 lg:w-96 xl:w-96  sm:left-24 sm:top-64 sm:rotate-12 md:left-24 md:top-64 md:rotate-12 lg:left-36 lg:top-96 lg:rotate-12  xl:left-64 xl:top-32 xl:rotate-12 "
         src={star}
-        alt=""
+        alt="star icon"
       />
       <motion.img
         className="absolute hidden w-12 bottom-10 right-1 z-20 md:flex  md:w-20  md:bottom-[14rem] md:right-20 md:rotate-6  lg:bottom-[30rem] lg:right-20 lg:rotate-6 xl:bottom-48 xl:right-64 xl:rotate-6"
@@ -19,7 +19,7 @@ function HomePage() {
         animate={{ scale: 1, rotate: 6 }}
         transition={{ duration: 0.2, delay: 0.8 }}
         src={small4}
-        alt=""
+        alt="star icon"
       />
       <motion.img
         initial={{ scale: 0 }}
@@ -27,7 +27,7 @@ function HomePage() {
         transition={{ duration: 0.2, delay: 0.9 }}
         className="absolute hidden w-14 bottom-0 right-5 z-20 md:flex md:w-24 md:bottom-[9rem]  md:right-32 lg:bottom-96  lg:right-24 xl:bottom-24  xl:right-72 "
         src={small2}
-        alt=""
+        alt="star icon"
       />
 
       <motion.div
@@ -49,18 +49,18 @@ function HomePage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <motion.h1
+        <h1
           style={{ fontFamily: "Lilita One" }}
           className="flex justify-center items-center text-[2.5rem] px-4 p-1  -rotate-3 md:p-3 md:px-14 md:text-7xl  border-[3px] md:-rotate-3 border-[#4c63af] bg-[#FF9494] text-[#fbefe1]"
         >
           This is my Portfolio
-        </motion.h1>
-        <motion.h1
+        </h1>
+        <h1
           style={{ fontFamily: "Lilita One" }}
           className="flex justify-center items-center text-[2.5rem] px-2 p-1  -rotate-3 md:text-7xl  md:p-3 md:px-14 mt-[3px] border-[3px] md:-rotate-3 border-[#4c63af] bg-[#FFD1D1] text-[#fbefe1]"
         >
           Front-End Developer
-        </motion.h1>
+        </h1>
       </motion.div>
       <motion.div
         className="flex justify-center items-center  relative "

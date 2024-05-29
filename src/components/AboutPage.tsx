@@ -8,15 +8,15 @@ function AboutPage() {
     <motion.div className="bg-white border-[3px] border-[#4c63af] rounded-3xl px-5 mx-5">
       <div className="pt-3 ">
         <motion.img
-          className="absolute  w-44 top-[35rem] right-0 rotate-90 md:w-80 md:right-0 md:top-[25rem] md:rotate-[100deg] lg:right-14 lg:top-[35rem] lg:rotate-90 xl:rotate-12  xl:right-[35rem] xl:top-0"
+          className="absolute w-44 top-[35rem] right-0 rotate-90 md:w-80 md:right-0 md:top-[25rem] md:rotate-[100deg] lg:right-14 lg:top-[35rem] lg:rotate-90 xl:rotate-12 xl:right-[35rem] xl:top-0"
           src={vector}
-          alt=""
+          alt="arrow right icon"
         />
       </div>
       <motion.div className="flex flex-col-reverse xl:flex-row xl:justify-around items-center mt-7 xl:mt-2">
         <motion.div className="about-box w-[80%] xl:w-[50%]">
           <div className="flex justify-end lg:justify-center xl:justify-end">
-            <p className="px-5 text-3xl md:text-6xl xl:px-0  xl:text-5xl font-bold text-[#4c63af]">
+            <p className="px-5 text-3xl md:text-6xl xl:px-0 xl:text-5xl font-bold text-[#4c63af]">
               Jutapon Chaiyakhun
             </p>
           </div>
@@ -24,7 +24,7 @@ function AboutPage() {
             <img
               className="absolute w-9 -rotate-12 md:w-14 md:bottom-[19rem] md:left-16 md:-rotate-12 lg:bottom-[30rem] lg:left-24 lg:-rotate-12 xl:top-52 xl:left-28 xl:-rotate-12"
               src={heart2}
-              alt=""
+              alt="pink heart icon"
             />
             <p className="text-center mb-10 xl:mb-0 xl:text-justify xl:break-normal xl:indent-16 tracking-tight">
               Hi there!, my name is Jutapon Chaiyakhun. I am now 21 yo! and
@@ -49,7 +49,7 @@ function AboutPage() {
               width={"100%"}
               className="flex  justify-center items-center border-[4px] border-[#4c63af]"
               src={khing4}
-              alt=""
+              alt="author image"
             />
           </motion.div>
           <div className="flex">

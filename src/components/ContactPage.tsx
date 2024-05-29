@@ -35,7 +35,7 @@ function ContactPage() {
         <img
         className="absolute hidden  md:flex lg:flex xl:flex xl:w-32 lg:w-24 md:w-28 md:left-[26rem] md:top-[0rem] md:rotate-12  lg:left-[40rem] lg:top-[0rem] lg:rotate-12  xl:left-[40rem] xl:top-[0rem]  xl:rotate-12 "
         src={small6}
-        alt=""
+        alt="star icon"
       />
 
         <div

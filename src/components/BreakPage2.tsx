@@ -71,7 +71,7 @@ function BreakPage2() {
           </motion.p>
         </motion.div>
         <div className="bp z-40 absolute w-[17rem]">
-          <img src={bp1} alt="" />
+          <img src={bp1} alt="smile icon" />
         </div>
       </div>
     </div>

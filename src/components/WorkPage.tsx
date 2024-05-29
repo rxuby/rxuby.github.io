@@ -27,19 +27,16 @@ const content1 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
     <p className="text-xl">Skills</p>
     <div className="flex justify-around items-center text-3xl">
-      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript />{" "}
-      <RiTailwindCssFill /> <TbBrandFramerMotion /> <SiRedux />{" "}
+      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript /> <RiTailwindCssFill /> <TbBrandFramerMotion /> <SiRedux />
     </div>
   </div>
 );
 
 const content2 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
-    {" "}
     <p className="text-xl">Skills</p>
     <p className="flex justify-around items-center text-3xl">
-      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript />{" "}
-      <RiTailwindCssFill /> <SiAntdesign /> <SiRedux />{" "}
+      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript /> <RiTailwindCssFill /> <SiAntdesign /> <SiRedux />
     </p>
   </div>
 );
@@ -48,8 +45,7 @@ const content3 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
     <p className="text-xl">Skills</p>
     <p className="flex justify-around items-center text-3xl">
-      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript />{" "}
-      <RiTailwindCssFill /> <TbBrandFramerMotion /> <SiAntdesign />
+      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript /> <RiTailwindCssFill /> <TbBrandFramerMotion /> <SiAntdesign />
     </p>
   </div>
 );
@@ -58,8 +54,7 @@ const content4 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
     <p className="text-xl">Skills</p>
     <p className="flex justify-around items-center text-3xl">
-      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript />{" "}
-      <RiTailwindCssFill /> <TbBrandFramerMotion />
+      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript /> <RiTailwindCssFill /> <TbBrandFramerMotion />
     </p>
   </div>
 );
@@ -68,8 +63,7 @@ const content5 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
     <p className="text-xl">Skills</p>
     <p className="flex justify-around items-center text-3xl">
-      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript />{" "}
-      <RiTailwindCssFill /> <SiAntdesign /> <SiAxios /> <TbBrandFramerMotion />
+      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript /> <RiTailwindCssFill /> <SiAntdesign /> <SiAxios /> <TbBrandFramerMotion />
     </p>
   </div>
 );
@@ -78,8 +72,7 @@ const content6 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
     <p>Skills</p>
     <p className="flex justify-around items-center text-3xl">
-      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript />{" "}
-      <RiTailwindCssFill /> <SiAntdesign />
+      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript /> <RiTailwindCssFill /> <SiAntdesign />
     </p>
   </div>
 );
@@ -87,8 +80,7 @@ const content7 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
     <p>Skills</p>
     <p className="flex justify-around items-center text-3xl">
-      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript />{" "}
-      <RiTailwindCssFill />
+      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript /> <RiTailwindCssFill />
     </p>
   </div>
 );
@@ -97,8 +89,7 @@ const content8 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
     <p>Skills</p>
     <p className="flex justify-around items-center text-3xl">
-      <FaHtml5 /> <FaReact /> <SiVite /> <BiLogoTypescript />{" "}
-      <RiTailwindCssFill /> <SiAntdesign /> <SiRedux />
+      <FaHtml5 /> <FaReact /> <SiVite /> <BiLogoTypescript /> <RiTailwindCssFill /> <SiAntdesign /> <SiRedux />
     </p>
   </div>
 );
@@ -107,7 +98,7 @@ const content9 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
     <p>Skills</p>
     <p className="flex justify-around items-center text-3xl">
-      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript />{" "}
+      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript />
     </p>
   </div>
 );
@@ -123,14 +114,10 @@ function WorkPage() {
       animate={inViewWork ? { opacity: 1, x: 0 } : {}}
     >
       <div>
-        <h1
-          style={{ fontFamily: "Lilita One" }}
-          className="flex justify-center p-5 lg:ml-10 md:ml-5 text-6xl border-t-[3px] border-x-[3px] w-96 rounded-t-3xl shadow-xl bg-[#FFD1D1] text-[#92a1d4] border-[#4c63af]"
-        >
+        <h1 style={{ fontFamily: "Lilita One" }} className="flex justify-center p-5 lg:ml-10 md:ml-5 text-6xl border-t-[3px] border-x-[3px] w-96 rounded-t-3xl shadow-xl bg-[#FFD1D1] text-[#92a1d4] border-[#4c63af]">
           MY WORK
         </h1>
       </div>
-      {/* <img className="absolute w-44 top-6 right-0 z-30 rotate-12" src={sticker1} alt="" /> */}
 
       <div className=" rounded-tr-3xl rounded-b-3xl  border-[3px] md:mx-5 lg:mx-10 border-[#4c63af] bg-[#FFD1D1]">
         <Swiper
@@ -159,7 +146,6 @@ function WorkPage() {
                 </div>
                 <div className="mt-1 mx-6 text-3xl font-semibold">
                   <p className="work-name text-[#4c63af]">Pokemon Dex No.1</p>
-                  {/* <img className="w-96" src={line} alt="" /> */}
                 </div>
                 <div className=" mx-3 flex justify-end text-5xl text-[#4c63af]">
                   <Popover content={content1}>
@@ -171,7 +157,6 @@ function WorkPage() {
           </SwiperSlide>
 
           <SwiperSlide className="flex justify-center items-center content-center my-5">
-            {" "}
             <a href="https://github.com/rxuby/Redux.git">
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
@@ -199,7 +184,6 @@ function WorkPage() {
           </SwiperSlide>
 
           <SwiperSlide className="flex justify-center items-center content-center my-5">
-            {" "}
             <a href="https://github.com/rxuby/Redux.git">
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
@@ -229,7 +213,6 @@ function WorkPage() {
           </SwiperSlide>
 
           <SwiperSlide className="flex justify-center items-center content-center my-5">
-            {" "}
             <a href="https://github.com/rxuby/AS2_React.git">
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
@@ -238,7 +221,6 @@ function WorkPage() {
                 className="work-box sm:w-[500px] md:w-[700px] lg:w-[700px] xl:w-[1000px] 2xl:w-[1100px] border-[3px] border-[#4c63af] rounded-3xl bg-white"
               >
                 <div className="my-4 mx-4 ">
-                  {" "}
                   <img
                     className="rounded-3xl border-[3px] border-[#4c63af] "
                     src={vacab}
@@ -260,7 +242,6 @@ function WorkPage() {
           </SwiperSlide>
 
           <SwiperSlide className="flex justify-center items-center content-center my-5">
-            {" "}
             <a href="https://github.com/rxuby/React_Route.git">
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
@@ -269,7 +250,6 @@ function WorkPage() {
                 className="work-box sm:w-[500px] md:w-[700px] lg:w-[700px] xl:w-[1000px] 2xl:w-[1100px] border-[3px] border-[#4c63af] rounded-3xl bg-white"
               >
                 <div className="my-4 mx-4 ">
-                  {" "}
                   <img
                     className="rounded-3xl border-[3px] border-[#4c63af] "
                     src={yugioh}
@@ -289,7 +269,6 @@ function WorkPage() {
           </SwiperSlide>
 
           <SwiperSlide className="flex justify-center items-center content-center my-5">
-            {" "}
             <a href="https://github.com/rxuby/React_Route.git">
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
@@ -298,7 +277,6 @@ function WorkPage() {
                 className="work-box sm:w-[500px] md:w-[700px] lg:w-[700px] xl:w-[1000px] 2xl:w-[1100px] border-[3px] border-[#4c63af] rounded-3xl bg-white"
               >
                 <div className="my-4 mx-4 ">
-                  {" "}
                   <img
                     className="rounded-3xl border-[3px] border-[#4c63af] "
                     src={antdesign}
@@ -321,7 +299,6 @@ function WorkPage() {
             <a href="https://github.com/rxuby/React_Route.git">
               <div className="work-box sm:w-[500px] md:w-[700px] lg:w-[700px] xl:w-[1000px] 2xl:w-[1100px] border-[3px] border-[#4c63af] rounded-3xl bg-white">
                 <div className="my-4 mx-4 ">
-                  {" "}
                   <img
                     className="rounded-3xl border-[3px] border-[#4c63af] "
                     src={news}
@@ -341,11 +318,9 @@ function WorkPage() {
           </SwiperSlide>
 
           <SwiperSlide className="flex justify-center items-center content-center my-5">
-            {" "}
             <a href="https://github.com/rxuby/Redux.git">
               <div className="work-box sm:w-[500px] md:w-[700px] lg:w-[700px] xl:w-[1000px] 2xl:w-[1100px] border-[3px] border-[#4c63af] rounded-3xl bg-white">
                 <div className="my-4 mx-4 ">
-                  {" "}
                   <img
                     className="rounded-3xl border-[3px] border-[#4c63af] "
                     src={redux}
@@ -367,11 +342,9 @@ function WorkPage() {
           </SwiperSlide>
 
           <SwiperSlide className="flex justify-center items-center content-center my-5">
-            {" "}
             <a href="https://github.com/rxuby/React_Route.git">
               <div className="work-box sm:w-[500px] md:w-[700px] lg:w-[700px] xl:w-[1000px] 2xl:w-[1100px] border-[3px] border-[#4c63af] rounded-3xl bg-white">
                 <div className="my-4 mx-4">
-                  {" "}
                   <img
                     className="rounded-3xl border-[3px] border-[#4c63af] "
                     src={wscss}
@@ -390,16 +363,6 @@ function WorkPage() {
             </a>
           </SwiperSlide>
         </Swiper>
-        {/* <div className="flex justify-center md:flex md:justify-end md:mr-5 ">
-          <Link to={"/projects"}>
-            <h1
-              style={{ fontFamily: "Lilita One" }}
-              className="more mb-24 md:mb-5 md:flex md:justify-start md:ml-5 md:mr-5 text-5xl md:text-4xl mt-8 text-[#FF9494]"
-            >
-              LET'S SEE MORE PROJECTS
-            </h1>
-          </Link>
-        </div> */}
       </div>
     </motion.div>
   );
