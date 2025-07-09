@@ -5,19 +5,34 @@ import HomePage from "@components/HomePage";
 import AboutPage from "@components/AboutPage";
 import WorkPage from "@components/WorkPage";
 import ContactPage from "@components/ContactPage";
-import LocomotiveScroll from "locomotive-scroll";
 import { AnimatePresence, motion } from "framer-motion";
 import BreakPage from "@components/BreakPage";
 import { FaBars, FaTimes } from "react-icons/fa";
 import BreakPage2 from "@components/BreakPage2";
-// import BreakPage2 from "@components/BreakPage2";
-// import "locomotive-scroll/dist/locomotive-scroll.css";
+import Lenis from "@studio-freight/lenis";
 
 function App() {
   const [showNav, setShowNav] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const lenisRef = useRef<Lenis | null>(null);
+
+  useEffect(() => {
+    const lenis = new Lenis({
+      lerp: 0.1,
+    });
+    lenisRef.current = lenis;
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
 
   const { ref: aboutRef, inView: inViewAbout } = useInView({
     triggerOnce: true,
@@ -49,30 +64,17 @@ function App() {
     };
   }, [lastScrollY, showMobileMenu]);
 
-  useEffect(() => {
-    if (scrollRef.current) {
-      const scroll = new LocomotiveScroll({
-        el: scrollRef.current,
-        smooth: true,
-        multiplier: 1.5,
-      });
-
-      return () => {
-        if (scroll) scroll.destroy();
-      };
-    }
-  }, []);
-
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    if (element && lenisRef.current) {
+      const top = element.getBoundingClientRect().top + window.scrollY;
+      lenisRef.current.scrollTo(top, { duration: 0.5 });
     }
   };
   return (
-    <div ref={scrollRef} data-scroll-container data-scroll-speed="1">
+    <div>
       <motion.nav
-        className={`flex justify-center fixed h-24 top-0 right-0 z-50 w-full transition-transform duration-500 ${
+        className={`flex justify-center fixed h-28 top-0 right-0 z-50 w-full transition-transform duration-500 ${
           showNav ? "translate-y-0" : "-translate-y-full"
         }`}
         initial={{ y: "-100%" }}
@@ -84,7 +86,7 @@ function App() {
           style={{ fontFamily: "Lilita One" }}
         >
           <div>
-            <li className="hidden pr-12 md:flex md:text-6xl duration-700">
+            <li className="hidden pr-12 md:flex md:text-[65px] duration-700">
               <a
                 href="#"
                 onClick={(e) => {
@@ -96,7 +98,7 @@ function App() {
               </a>
             </li>
           </div>
-          <div className="gap-11 hidden md:flex">
+          <div className="gap-11 hidden md:flex md:text-4xl">
             <li className="hov">
               <a
                 href="#"
@@ -224,7 +226,6 @@ function App() {
       <motion.div
         id="home"
         className="h-auto md:h-screen flex justify-center items-center mb-10 md:mb-0"
-        data-scroll-section
       >
         <HomePage />
       </motion.div>
@@ -232,7 +233,6 @@ function App() {
       <motion.div
         id="about"
         className="h-auto md:h-screen mb-10 md:mb-0 flex justify-center items-center"
-        data-scroll-section
         ref={aboutRef}
         initial={{ opacity: 0, y: 50 }}
         animate={inViewAbout ? { opacity: 1, y: 0 } : {}}
@@ -241,14 +241,13 @@ function App() {
         <AboutPage />
       </motion.div>
 
-      <div className="h-auto mb-10 md:mb-0" data-scroll-section>
+      <div className="h-auto mb-10 md:mb-0">
         <BreakPage />
       </div>
 
       <motion.div
         id="work"
         className="h-auto"
-        data-scroll-section
         ref={workRef}
         initial={{ opacity: 0, y: 50 }}
         animate={inViewWork ? { opacity: 1, y: 0 } : {}}

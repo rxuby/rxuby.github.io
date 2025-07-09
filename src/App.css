@@ -1,7 +1,7 @@
 body {
   background-color: #f6f1e9;
   overflow-x: hidden;
-  user-select: none; 
+  user-select: none;
 }
 
 [data-scroll-container] {
@@ -170,7 +170,6 @@ h1 {
 
 @media (max-width: 769px) {
   .nav {
-    
     display: flex;
   }
   .hamburger {
@@ -201,8 +200,6 @@ h1 {
     width: 20px !important;
   }
 }
-
-
 
 @media (min-width: 640px) {
   .swiper-wrapper {
@@ -274,4 +271,8 @@ h1 {
     padding: 35px;
     width: 50px !important;
   }
+}
+
+.skill {
+  box-shadow: 3px 3px 0 #4c63af;
 }

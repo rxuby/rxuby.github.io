@@ -1,7 +1,46 @@
+import "../App.css"
 import { motion } from "framer-motion";
 import vector from "../images/Vector.png";
 import heart2 from "../images/heart2.png";
 import khing4 from "../images/khing4.jpg";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaGitAlt,
+  FaDocker,
+  FaFigma,
+  FaJsSquare,
+} from "react-icons/fa";
+
+import {
+  SiTailwindcss,
+  SiPostman,
+  SiVite,
+  SiAntdesign,
+  SiFramer,
+  SiPlaywright,
+  SiRobotframework,
+} from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
+
+const skills = [
+  { icon: <FaHtml5 />, name: "HTML" },
+  { icon: <FaCss3Alt />, name: "CSS" },
+  { icon: <FaJsSquare />, name: "JavaScript" },
+  { icon: <BiLogoTypescript  />, name: "TypeScript" },
+  { icon: <SiVite />, name: "Vite" },
+  { icon: <FaReact />, name: "React" },
+  { icon: <SiTailwindcss />, name: "Tailwind" },
+  { icon: <SiAntdesign />, name: "Ant Design" },
+  { icon: <SiFramer />, name: "Framer Motion" },
+  { icon: <FaFigma />, name: "Figma" },
+  { icon: <FaGitAlt />, name: "Git" },
+  { icon: <FaDocker />, name: "Docker" },
+  { icon: <SiPostman />, name: "Postman" },
+  { icon: <SiPlaywright />, name: "Playwright" },
+  { icon: <SiRobotframework />, name: "Robot" },
+];
 
 function AboutPage() {
   return (
@@ -26,15 +65,35 @@ function AboutPage() {
               src={heart2}
               alt="pink heart icon"
             />
-            <p className="text-center mb-10 xl:mb-0 xl:text-justify xl:break-normal xl:indent-16 tracking-tight">
-              Hi there!, my name is Jutapon Chaiyakhun. I am now 21 yo! and
-              studying computer science at the College of Computing at Khon Kaen
-              University I have the ability to design and create websites. I
-              would like to use the knowledge I have learned to create works and
-              gain new experiences. to myself to work as a website development
-              team to apply the knowledge and experience from this internship to
-              future work after graduation.
+            <p className="text-center mb-10 xl:mb-0 xl:text-justify xl:break-normal tracking-tight">
+              Hi there! My name is Jutapon Chaiyakhun. I'm 23 years old and
+              graduated in Computer Science from the College of Computing, Khon
+              Kaen University
             </p>
+          </div>
+          <div>
+            <div className=" flex justify-between items-center text-[25px] xl:text-[30px] mt-8 mb-5 text-[#4c63af] border-b-2 border-[#4c63af]">
+              <p className="px-5 mb-3 text-3xl md:text-6xl xl:px-0 xl:text-4xl font-bold text-[#4c63af] ">
+                Key Skills 
+              </p>
+              <p className="flex items-center text-2xl">Frontend &gt; Dota Bruhh</p>
+            </div>
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4 text-[#4c63af]">
+              {skills.map((skill, index) => (
+                <motion.div
+                  key={index}
+                  className="skill flex items-center text-center text-4xl border-2 border-[#4c63af] "
+                  whileHover={{ scale: 1.0, rotate: 3 }}
+                  // whileTap={{ scale: 0.1 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.01 }}
+                >
+                  {/* <div className="text-[#4c63af] pl-2">{skill.icon}</div> */}
+                  <p className="text-[18px] mt-1 pl-2 ">{skill.name}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </motion.div>
         <motion.div className="w-[400px] lg:mb-5">

@@ -33,10 +33,10 @@ function ContactPage() {
           MY CONTACT
         </h1>
         <img
-        className="absolute hidden  md:flex lg:flex xl:flex xl:w-32 lg:w-24 md:w-28 md:left-[26rem] md:top-[0rem] md:rotate-12  lg:left-[40rem] lg:top-[0rem] lg:rotate-12  xl:left-[40rem] xl:top-[0rem]  xl:rotate-12 "
-        src={small6}
-        alt="star icon"
-      />
+          className="absolute hidden  md:flex lg:flex xl:flex xl:w-32 lg:w-24 md:w-28 md:left-[26rem] md:top-[0rem] md:rotate-12  lg:left-[40rem] lg:top-[0rem] lg:rotate-12  xl:left-[40rem] xl:top-[0rem]  xl:rotate-12 "
+          src={small6}
+          alt="star icon"
+        />
 
         <div
           className="flex flex-col items-start z-50 md:flex-col md:justify-center md:items-start lg:flex-row  xl:flex-row  gap-10 mt-20 "
@@ -63,26 +63,26 @@ function ContactPage() {
             </div>
           </div>
 
-          <a
-            href="mailto:jutapon.c@kkumail.com"
+          <div
             className="contact-mail flex items-center justify-around gap-2 "
+            onClick={() => copyToClipboard("jutapon.cn@gmail.com")}
           >
-            <a
-              href="mailto:jutapon.c@kkumail.com"
+            <div
               className="flex justify-center items-center cursor-pointer border-2 rounded-xl p-2 border-[#4c63af]"
+              onClick={() => copyToClipboard("jutapon.cn@gmail.com")}
             >
               <MdEmail className="contact-icon-mail text-2xl text-[#4c63af] " />
-            </a>
+            </div>
 
-            <a
-              href="mailto:jutapon.c@kkumail.com"
+            <div
               className="flex justify-center items-center cursor-pointer"
+              onClick={() => copyToClipboard("jutapon.cn@gmail.com")}
             >
               <p className="contact-text-mail text-xl text-[#4c63af] font-semibold">
-                jutapon.c@kkumail.com
+                jutapon.cn@gmail.com
               </p>
-            </a>
-          </a>
+            </div>
+          </div>
 
           <a
             href="https://www.facebook.com/profile.php?id=100009523756189"

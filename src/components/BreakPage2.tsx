@@ -28,43 +28,43 @@ function BreakPage2() {
           animate={controls}
         >
           <motion.p
-            className="box relative z-30 bottom-0 border-[3px] border-[#4c63af] bg-[#FF9494] text-[#fbefe1] rotate-6 p-2"
+            className="cursor-grab active:cursor-grabbing box relative z-30 bottom-0 border-[3px] border-[#4c63af] bg-[#FF9494] text-[#fbefe1] rotate-6 p-2"
             drag
           >
             HTML5
           </motion.p>
           <motion.p
-            className="box relative z-30 bottom-0 border-[3px] border-[#4c63af] bg-[#FFD1D1] text-[#fbefe1] -rotate-3 p-2"
+            className="cursor-grab active:cursor-grabbing  box relative z-30 bottom-0 border-[3px] border-[#4c63af] bg-[#FFD1D1] text-[#fbefe1] -rotate-3 p-2"
             drag
           >
             CSS3
           </motion.p>
           <motion.p
-            className="box relative z-30 bottom-0 border-[3px] border-[#4c63af] bg-[#FF9494] text-[#fbefe1] rotate-3 p-2"
+            className="cursor-grab active:cursor-grabbing  box relative z-30 bottom-0 border-[3px] border-[#4c63af] bg-[#FF9494] text-[#fbefe1] rotate-3 p-2"
             drag
           >
             REACT
           </motion.p>
           <motion.p
-            className="box relative z-30 top-6 bottom-0 border-[3px] border-[#4c63af] bg-[#FFD1D1] text-[#fbefe1] -rotate-12 p-2"
+            className="cursor-grab active:cursor-grabbing  box relative z-30 top-6 bottom-0 border-[3px] border-[#4c63af] bg-[#FFD1D1] text-[#fbefe1] -rotate-12 p-2"
             drag
           >
             VITE
           </motion.p>
           <motion.p
-            className="box relative z-30 bottom-0 border-[3px] border-[#4c63af] bg-[#FF9494] text-[#fbefe1] -rotate-3 p-2"
+            className="cursor-grab active:cursor-grabbing  box relative z-30 bottom-0 border-[3px] border-[#4c63af] bg-[#FF9494] text-[#fbefe1] -rotate-3 p-2"
             drag
           >
             TYPESCRIPT
           </motion.p>
           <motion.p
-            className="box relative z-30 bottom-0 border-[3px] border-[#4c63af] bg-[#FFD1D1] text-[#fbefe1] rotate-12 p-2"
+            className="cursor-grab active:cursor-grabbing  box relative z-30 bottom-0 border-[3px] border-[#4c63af] bg-[#FFD1D1] text-[#fbefe1] rotate-12 p-2"
             drag
           >
             TAILWIND
           </motion.p>
           <motion.p
-            className="box relative z-30 bottom-0 border-[3px] border-[#4c63af] bg-[#FF9494] text-[#fbefe1] -rotate-3 p-2"
+            className="cursor-grab active:cursor-grabbing  box relative z-30 bottom-0 border-[3px] border-[#4c63af] bg-[#FF9494] text-[#fbefe1] -rotate-3 p-2"
             drag
           >
             MOTION
