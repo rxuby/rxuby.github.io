@@ -1,4 +1,4 @@
-import "../App.css"
+import "../App.css";
 import { motion } from "framer-motion";
 import vector from "../images/Vector.png";
 import heart2 from "../images/heart2.png";
@@ -28,7 +28,7 @@ const skills = [
   { icon: <FaHtml5 />, name: "HTML" },
   { icon: <FaCss3Alt />, name: "CSS" },
   { icon: <FaJsSquare />, name: "JavaScript" },
-  { icon: <BiLogoTypescript  />, name: "TypeScript" },
+  { icon: <BiLogoTypescript />, name: "TypeScript" },
   { icon: <SiVite />, name: "Vite" },
   { icon: <FaReact />, name: "React" },
   { icon: <SiTailwindcss />, name: "Tailwind" },
@@ -44,10 +44,10 @@ const skills = [
 
 function AboutPage() {
   return (
-    <motion.div className="bg-white border-[3px] border-[#4c63af] rounded-3xl px-5 mx-5">
+    <motion.div className="relative overflow-visible bg-white border-[3px] border-[#4c63af] rounded-3xl px-5 mx-5">
       <div className="pt-3 ">
         <motion.img
-          className="absolute w-44 top-[35rem] right-0 rotate-90 md:w-80 md:right-0 md:top-[25rem] md:rotate-[100deg] lg:right-14 lg:top-[35rem] lg:rotate-90 xl:rotate-12 xl:right-[35rem] xl:top-0"
+          className="absolute w-44 top-[560px] right-0 rotate-90 md:w-80 md:right-0 md:top-[288px] md:rotate-[100deg] lg:right-14 lg:top-[320px] lg:rotate-90 xl:rotate-12 xl:right-[560px] xl:top-[-64px]"
           src={vector}
           alt="arrow right icon"
         />
@@ -61,7 +61,7 @@ function AboutPage() {
           </div>
           <div className="flex text-[25px] xl:text-[27px] mt-5 text-[#4c63af]">
             <img
-              className="absolute w-9 -rotate-12 md:w-14 md:bottom-[19rem] md:left-16 md:-rotate-12 lg:bottom-[30rem] lg:left-24 lg:-rotate-12 xl:top-52 xl:left-28 xl:-rotate-12"
+              className="absolute w-9 -rotate-12 md:w-14 md:bottom-[19rem] md:left-16 md:-rotate-12 lg:bottom-[30rem] lg:left-24 lg:-rotate-12 xl:top-24 xl:left-28 xl:-rotate-12"
               src={heart2}
               alt="pink heart icon"
             />
@@ -74,9 +74,11 @@ function AboutPage() {
           <div>
             <div className=" flex justify-between items-center text-[25px] xl:text-[30px] mt-8 mb-5 text-[#4c63af] border-b-2 border-[#4c63af]">
               <p className="px-5 mb-3 text-3xl md:text-6xl xl:px-0 xl:text-4xl font-bold text-[#4c63af] ">
-                Key Skills 
+                Key Skills
               </p>
-              <p className="flex items-center text-2xl">Frontend &gt; Dota Bruhh</p>
+              <p className="flex items-center text-2xl">
+                Frontend &gt; Dota Bruhh
+              </p>
             </div>
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4 text-[#4c63af]">
               {skills.map((skill, index) => (
