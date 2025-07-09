@@ -114,7 +114,7 @@ function WorkPage() {
       animate={inViewWork ? { opacity: 1, x: 0 } : {}}
     >
       <div>
-        <h1 style={{ fontFamily: "Lilita One" }} className="flex justify-center p-5 lg:ml-10 md:ml-5 text-6xl border-t-[3px] border-x-[3px] w-96 rounded-t-3xl shadow-xl bg-[#FFD1D1] text-[#92a1d4] border-[#4c63af]">
+        <h1 style={{ fontFamily: "Lilita One" }} className="relative z-10 flex justify-center p-5 lg:ml-10 md:ml-5 text-6xl border-t-[3px] border-x-[3px] w-96 rounded-t-3xl bg-[#FFD1D1] text-[#92a1d4] border-[#4c63af]">
           MY WORK
         </h1>
       </div>

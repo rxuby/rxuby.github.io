@@ -60,7 +60,7 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
 export default function BreakPage() {
   return (
     <section>
-      <div className="bg-[#92a1d4] xl:mt-6  md:-rotate-2">
+      <div className="bg-[#92a1d4] xl:mt-6 md:-rotate-2">
         <ParallaxText baseVelocity={3}>
           Design this portfolio website by Jutapon Chaiyakhun
         </ParallaxText>
