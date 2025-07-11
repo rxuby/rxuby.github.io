@@ -13,7 +13,6 @@ import Lenis from "@studio-freight/lenis";
 
 function App() {
   const [showNav, setShowNav] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const lenisRef = useRef<Lenis | null>(null);
 
@@ -42,27 +41,25 @@ function App() {
     triggerOnce: true,
   });
 
+  const lastScrollYRef = useRef(0);
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY) {
-        setShowNav(false);
-      } else {
-        setShowNav(true);
-      }
-      setLastScrollY(currentScrollY);
 
-      if (showMobileMenu) {
-        setShowMobileMenu(false);
-      }
+      const isScrollingDown = currentScrollY > lastScrollYRef.current;
+      setShowNav(!isScrollingDown);
+
+      lastScrollYRef.current = currentScrollY;
+
+      setShowMobileMenu(false);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY, showMobileMenu]);
+  }, []);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -71,8 +68,9 @@ function App() {
       lenisRef.current.scrollTo(top, { duration: 0.5 });
     }
   };
+
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <motion.nav
         className={`flex justify-center fixed h-28 top-0 right-0 z-50 w-full transition-transform duration-500 ${
           showNav ? "translate-y-0" : "-translate-y-full"
@@ -225,7 +223,7 @@ function App() {
 
       <motion.div
         id="home"
-        className="h-auto md:h-screen flex justify-center items-center mb-10 md:mb-0"
+        className="h-screen md:h-screen flex justify-center items-center mb-10 md:mb-0"
       >
         <HomePage />
       </motion.div>
@@ -241,10 +239,6 @@ function App() {
         <AboutPage />
       </motion.div>
 
-      <div className="h-auto mb-10 md:mb-0">
-        <BreakPage />
-      </div>
-
       <motion.div
         id="work"
         className="h-auto"
@@ -253,7 +247,10 @@ function App() {
         animate={inViewWork ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5 }}
       >
-        <WorkPage />
+        <BreakPage />
+        <div className="relative z-10">
+          <WorkPage />
+        </div>
       </motion.div>
 
       <motion.div className="h-96 flex justify-center items-center">

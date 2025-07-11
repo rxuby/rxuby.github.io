@@ -2,13 +2,14 @@ import { motion } from "framer-motion";
 import star from "../images/star.svg";
 import small2 from "../images/small2.png";
 import small4 from "../images/small4.png";
+import '../App.css'
 
 function HomePage() {
   return (
-    <motion.div className="duration-300">
+    <motion.div className="duration-300 ">
       <motion.img
         animate={{ rotate: 12 }}
-        className="absolute w-64 md:w-96 lg:w-96 xl:w-[450px] sm:left-24 sm:top-64 sm:rotate-12 md:left-24 md:top-64 md:rotate-12 lg:left-36 lg:top-96 lg:rotate-12 xl:left-64 xl:top-40 xl:rotate-12 "
+        className="absolute w-96 md:w-96 lg:w-96 xl:w-[450px] sm:left-6 sm:top-40 sm:rotate-12 md:left-24 md:top-64 md:rotate-12 lg:left-36 lg:top-96 lg:rotate-12 xl:left-64 xl:top-40 xl:rotate-12 "
         src={star}
         alt="star icon"
       />
@@ -37,9 +38,9 @@ function HomePage() {
       >
         <h1
           style={{ fontFamily: "Lilita One" }}
-          className="flex justify-center items-center text-5xl p-3 px-12 border-2 mt-10 md:mt-0 md:text-7xl md:p-3 md:px-14 md:border-[3px] border-[#4c63af] bg-[#92a1d4] text-[#fbefe1]"
+          className="box-shadow flex justify-center items-center text-[50px] p-1 px-9 mt-10 mb-1 md:text-7xl md:p-3 md:px-14 border-[3px] border-[#4c63af] bg-[#92a1d4] text-[#fbefe1]"
         >
-          Hi! I'm Khing
+          Hi! I'm Khing 
         </h1>
       </motion.div>
       <motion.div
@@ -50,26 +51,26 @@ function HomePage() {
       >
         <h1
           style={{ fontFamily: "Lilita One" }}
-          className="flex justify-center items-center text-[2.5rem] px-4 p-1 md:p-3 md:px-14 md:text-7xl  border-[3px] border-[#4c63af] bg-[#FF9494] text-[#fbefe1]"
+          className="box-shadow flex justify-center items-center text-[45px] px-8 p-1 mb-1 md:p-3 md:px-14 md:text-7xl border-[3px] border-[#4c63af] bg-[#FF9494] text-[#fbefe1]"
         >
           First Jobber & Front-End Dev
         </h1>
         <h1
           style={{ fontFamily: "Lilita One" }}
-          className="flex justify-center items-center text-[2.5rem] px-2 p-1 md:text-7xl  md:p-3 md:px-14 mt-[3px] border-[3px] border-[#4c63af] bg-[#FFD1D1] text-[#fbefe1]"
+          className="box-shadow flex justify-center items-center text-[39.5px] px-4 py-2 p-1  md:text-7xl md:p-3 md:px-14 mt-[3px] border-[3px] border-[#4c63af] bg-[#FFD1D1] text-[#fbefe1]"
         >
           (Still polishing both layout and life)
         </h1>
       </motion.div>
       <motion.div
-        className="flex justify-center items-center  relative "
-        initial={{ x: "-100vw" }}
-        animate={{ x: 0, rotate: [0, 3, -3, 0, 4] }}
+        className="flex justify-end items-center  relative "
+        initial={{ x: "100vw" }}
+        animate={{ x: 0, rotate: [0, 3, 3, 0, -5] }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
       >
         <h1
           style={{ fontFamily: "Lilita One" }}
-          className="flex justify-center items-center text-[2rem] p-2 px-2 md:text-5xl md:p-3 md:px-14 border-[3px] md:mt-4  border-[#4c63af] bg-[#92a1d4] text-[#fbefe1]"
+          className="text-shadow flex justify-end items-center text-[34px] p-2 px-2 mt-0 md:text-5xl md:p-3 md:px-14 md:mt-4 border-[#4c63af] text-[#FFBF66]"
         >
           Designed & Developed by Khing (CS KKU)
         </h1>

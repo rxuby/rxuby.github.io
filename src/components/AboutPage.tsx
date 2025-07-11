@@ -52,9 +52,9 @@ function AboutPage() {
           alt="arrow right icon"
         />
       </div>
-      <motion.div className="flex flex-col-reverse xl:flex-row xl:justify-around items-center mt-7 xl:mt-2">
+      <motion.div className="flex flex-col-reverse xl:flex-row xl:justify-around items-center mt-7 xl:mt-2 pb-4">
         <motion.div className="about-box w-[80%] xl:w-[50%]">
-          <div className="flex justify-end lg:justify-center xl:justify-end">
+          <div className="flex justify-center lg:justify-center xl:justify-end">
             <p className="px-5 text-3xl md:text-6xl xl:px-0 xl:text-5xl font-bold text-[#4c63af]">
               Jutapon Chaiyakhun
             </p>
@@ -65,7 +65,7 @@ function AboutPage() {
               src={heart2}
               alt="pink heart icon"
             />
-            <p className="text-center mb-10 xl:mb-0 xl:text-justify xl:break-normal tracking-tight">
+            <p className="text-center break-normal mb-10 xl:mb-0 xl:text-justify xl:break-normal tracking-tight">
               Hi there! My name is Jutapon Chaiyakhun. I'm 23 years old and
               graduated in Computer Science from the College of Computing, Khon
               Kaen University
@@ -80,18 +80,16 @@ function AboutPage() {
                 Frontend &gt; Dota Bruhh
               </p>
             </div>
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4 text-[#4c63af]">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-4 text-[#4c63af]">
               {skills.map((skill, index) => (
                 <motion.div
                   key={index}
                   className="skill flex items-center text-center text-4xl border-2 border-[#4c63af] "
                   whileHover={{ scale: 1.0, rotate: 3 }}
-                  // whileTap={{ scale: 0.1 }}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.01 }}
+                  transition={{ delay: index * 0.02 }}
                 >
-                  {/* <div className="text-[#4c63af] pl-2">{skill.icon}</div> */}
                   <p className="text-[18px] mt-1 pl-2 ">{skill.name}</p>
                 </motion.div>
               ))}

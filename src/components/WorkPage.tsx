@@ -27,7 +27,8 @@ const content1 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
     <p className="text-xl">Skills</p>
     <div className="flex justify-around items-center text-3xl">
-      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript /> <RiTailwindCssFill /> <TbBrandFramerMotion /> <SiRedux />
+      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript />{" "}
+      <RiTailwindCssFill /> <TbBrandFramerMotion /> <SiRedux />
     </div>
   </div>
 );
@@ -36,7 +37,8 @@ const content2 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
     <p className="text-xl">Skills</p>
     <p className="flex justify-around items-center text-3xl">
-      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript /> <RiTailwindCssFill /> <SiAntdesign /> <SiRedux />
+      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript />{" "}
+      <RiTailwindCssFill /> <SiAntdesign /> <SiRedux />
     </p>
   </div>
 );
@@ -45,7 +47,8 @@ const content3 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
     <p className="text-xl">Skills</p>
     <p className="flex justify-around items-center text-3xl">
-      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript /> <RiTailwindCssFill /> <TbBrandFramerMotion /> <SiAntdesign />
+      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript />{" "}
+      <RiTailwindCssFill /> <TbBrandFramerMotion /> <SiAntdesign />
     </p>
   </div>
 );
@@ -54,7 +57,8 @@ const content4 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
     <p className="text-xl">Skills</p>
     <p className="flex justify-around items-center text-3xl">
-      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript /> <RiTailwindCssFill /> <TbBrandFramerMotion />
+      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript />{" "}
+      <RiTailwindCssFill /> <TbBrandFramerMotion />
     </p>
   </div>
 );
@@ -63,7 +67,8 @@ const content5 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
     <p className="text-xl">Skills</p>
     <p className="flex justify-around items-center text-3xl">
-      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript /> <RiTailwindCssFill /> <SiAntdesign /> <SiAxios /> <TbBrandFramerMotion />
+      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript />{" "}
+      <RiTailwindCssFill /> <SiAntdesign /> <SiAxios /> <TbBrandFramerMotion />
     </p>
   </div>
 );
@@ -72,7 +77,8 @@ const content6 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
     <p>Skills</p>
     <p className="flex justify-around items-center text-3xl">
-      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript /> <RiTailwindCssFill /> <SiAntdesign />
+      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript />{" "}
+      <RiTailwindCssFill /> <SiAntdesign />
     </p>
   </div>
 );
@@ -80,7 +86,8 @@ const content7 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
     <p>Skills</p>
     <p className="flex justify-around items-center text-3xl">
-      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript /> <RiTailwindCssFill />
+      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <BiLogoTypescript />{" "}
+      <RiTailwindCssFill />
     </p>
   </div>
 );
@@ -89,7 +96,8 @@ const content8 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
     <p>Skills</p>
     <p className="flex justify-around items-center text-3xl">
-      <FaHtml5 /> <FaReact /> <SiVite /> <BiLogoTypescript /> <RiTailwindCssFill /> <SiAntdesign /> <SiRedux />
+      <FaHtml5 /> <FaReact /> <SiVite /> <BiLogoTypescript />{" "}
+      <RiTailwindCssFill /> <SiAntdesign /> <SiRedux />
     </p>
   </div>
 );
@@ -114,7 +122,10 @@ function WorkPage() {
       animate={inViewWork ? { opacity: 1, x: 0 } : {}}
     >
       <div>
-        <h1 style={{ fontFamily: "Lilita One" }} className="relative z-10 flex justify-center p-5 lg:ml-10 md:ml-5 text-6xl border-t-[3px] border-x-[3px] w-96 rounded-t-3xl bg-[#FFD1D1] text-[#92a1d4] border-[#4c63af]">
+        <h1
+          style={{ fontFamily: "Lilita One" }}
+          className="relative z-10 flex justify-center p-5 lg:ml-10 md:ml-5 text-6xl border-t-[3px] border-x-[3px] w-96 rounded-t-3xl bg-[#FFD1D1] text-[#92a1d4] border-[#4c63af]"
+        >
           MY WORK
         </h1>
       </div>
@@ -184,7 +195,7 @@ function WorkPage() {
           </SwiperSlide>
 
           <SwiperSlide className="flex justify-center items-center content-center my-5">
-            <a href="https://github.com/rxuby/Redux.git">
+            <a href="https://github.com/rxuby/AS_WebApp/tree/main">
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}

@@ -276,3 +276,12 @@ h1 {
 .skill {
   box-shadow: 3px 3px 0 #4c63af;
 }
+
+/* .box-shadow {
+  box-shadow: 2px 2px 0px #4c63af;
+} */
+
+.text-shadow {
+  text-shadow: 2px 2px 0 #4c63af;
+
+}
