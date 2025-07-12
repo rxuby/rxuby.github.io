@@ -7,8 +7,9 @@ import antdesign from "@images/antdesign.png";
 import asweb from "@images/asweb.png";
 import redux from "@images/redux.png";
 import wscss from "@images/wscss.png";
+import final from "@images/final.png"
 import { TiPlusOutline } from "react-icons/ti";
-import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaJsSquare } from "react-icons/fa";
 import { SiVite, SiAntdesign, SiRedux, SiAxios } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -22,6 +23,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "../App.css";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+
 
 const content1 = (
   <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
@@ -111,6 +113,15 @@ const content9 = (
   </div>
 );
 
+const content10 = (
+  <div style={{ fontFamily: "Lilita One", color: "#3953a5" }}>
+    <p>Skills</p>
+    <p className="flex justify-around items-center text-3xl">
+      <FaHtml5 /> <FaCss3Alt /> <FaReact /> <SiVite /> <FaJsSquare /> <RiTailwindCssFill /> <SiAntdesign />
+    </p>
+  </div>
+);
+
 function WorkPage() {
   const { ref: refWork, inView: inViewWork } = useInView({
     triggerOnce: true,
@@ -139,6 +150,27 @@ function WorkPage() {
           keyboard={true}
           modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         >
+           <SwiperSlide className="flex justify-center items-center content-center my-5">
+            <Popover content="This project is private and cannot be viewed" trigger="hover">
+              <div className="work-box sm:w-[500px] md:w-[700px] lg:w-[700px] xl:w-[1000px] 2xl:w-[1100px] border-[3px] border-[#4c63af] rounded-3xl bg-white">
+                <div className="my-4 mx-4">
+                  <img
+                    className="rounded-3xl border-[3px] border-[#4c63af] object-cover "
+                    src={final}
+                    alt="academic service chatbot"
+                  />
+                </div>
+                <div className="mt-1 mx-6 text-3xl font-semibold">
+                  <p className="work-name text-[#4c63af]">Academic Service Chatbot (Final Project)</p>
+                </div>
+                <div className=" mx-3 flex justify-end text-5xl text-[#4c63af]">
+                  <Popover content={content10}>
+                    <TiPlusOutline className="btn-plus border-[3px] mb-2 rounded-full border-[#4c63af]" />
+                  </Popover>
+                </div>
+              </div>
+            </Popover>
+          </SwiperSlide>
           <SwiperSlide className="flex justify-center items-center content-center my-5">
             {" "}
             <a href="https://github.com/rxuby/React_Route.git">
